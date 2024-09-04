@@ -101,7 +101,7 @@ header {
     width: 100%;
     height: auto;
     text-align: center;
-    padding-bottom: 600px;
+    padding-bottom: 0px;
 }
 
 .images img {
@@ -167,4 +167,18 @@ header {
     outline: solid 3px;
     border-radius: 3px;
     color: #9A9A9A;
+}
+
+.floating-icon {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    z-index: 1000;
+    background: none;
+}
+
+.floating-icon a img {
+    width: 45px;
+    height: 45px;
+    cursor: pointer;
 }
