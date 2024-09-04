@@ -48,6 +48,12 @@ header {
     font-family: cursive;
     background-color: #3A3A3A;
     text-align: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: #3A3A3A;
+    padding: 10px 0;
+    z-index: 1000;
 }
 
 .menu ul {
@@ -74,3 +80,10 @@ header {
     color: #9A9A9A;
 }
 
+.selecting,
+.menu ul li:hover {
+    background-color: #3A3A3A;
+    outline: solid 3px;
+    border-radius: 3px;
+    color: #9A9A9A;
+}

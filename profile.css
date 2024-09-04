@@ -29,7 +29,8 @@ h1 {
     margin: 0;
 }
 
-h2, h3 {
+h2,
+h3 {
     text-align: center;
     background-color: #181818;
     color: #ffffff;
@@ -63,8 +64,8 @@ header {
 
 /* Flexbox container */
 .content-container {
-    display: flex; 
-    align-items: flex-start; 
+    display: flex;
+    align-items: flex-start;
     justify-content: flex-start;
     padding: 20px;
     gap: 20px;
@@ -77,7 +78,7 @@ header {
     padding: 10px;
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
-    max-width: 350px; 
+    max-width: 350px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -100,6 +101,7 @@ header {
     width: 100%;
     height: auto;
     text-align: center;
+    padding-bottom: 600px;
 }
 
 .images img {
@@ -127,6 +129,12 @@ header {
     font-family: cursive;
     background-color: #3A3A3A;
     text-align: center;
+    position: -webkit-sticky; /* For Safari */
+    position: sticky;
+    top: 0;
+    background-color: #3A3A3A;
+    padding: 10px 0;
+    z-index: 1000;
 }
 
 .menu ul {
@@ -146,6 +154,14 @@ header {
     color: #D0D0D0;
 }
 
+.menu ul li:hover {
+    background-color: #3A3A3A;
+    outline: solid 3px;
+    border-radius: 3px;
+    color: #9A9A9A;
+}
+
+.selecting,
 .menu ul li:hover {
     background-color: #3A3A3A;
     outline: solid 3px;

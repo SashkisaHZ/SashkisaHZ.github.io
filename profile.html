@@ -10,7 +10,14 @@ Link ti Github profile, Insta
 <html>
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta name="description"
+        content="Profile page of Alexander Atanasov featuring personal information, interests, and links to social media profiles.">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
     <title>Alexander Atanasov</title>
+
     <link rel="stylesheet" href="profile.css">
 </head>
 
@@ -19,27 +26,26 @@ Link ti Github profile, Insta
         <h1>Who am I?</h1>
     </header>
 
-    <div class="menu">
+    <nav class="menu">
         <ul>
             <li><a href="index.html">Home</a></li>
-            <li><a href="profile.html">Profile</a></li>
+            <li class="selecting"><a href="profile.html">Profile</a></li>
             <li><a href="dashboard.html">Dashboard</a></li>
             <li><a href="faq.html">FAQ</a></li>
             <li><a href="blog.html">Blog</a></li>
         </ul>
+    </nav>
 
-    </div>
+    <main class="content-container">
 
-    <div class="content-container">
-
-        <div class="info">
+        <section class="info">
             <h2>Personal Information</h2>
             <aside>Alexander Atanasov</aside>
             <aside>14 March 2005</aside>
             <aside>Ruse, Bulgaria</aside>
-        </div>
+        </section>
 
-        <div class="info">
+        <section class="info">
             <h3>Extra-curricular activities</h3>
             <aside>Fishing</aside>
             <aside>Camping/Exploring</aside>
@@ -47,17 +53,23 @@ Link ti Github profile, Insta
             <aside>Gaming</aside>
             <aside>Zelda series</aside>
             <aside>Anime/Manga</aside>
-        </div>
+        </section>
 
         <div class="frame">
             <div class="images">
                 <div class="animation">
-                    <img src="Alex.jpg" width="323.33" height="432" alt="Alexander Atanasov">
+                    <img src="img/alex.jpg" width="323.33" height="432" alt="Alexander Atanasov">
                 </div>
                 <div class="description">Basically me</div>
             </div>
         </div>
-    </div>
+    </main>
+
+    <footer>
+        <p>Connect with me on <a href="https://github.com/SashkisaHZ" target="_blank">GitHub</a> and <a
+                href="https://www.instagram.com/sashkisa14  " target="_blank">Instagram</a>.</p>
+    </footer>
+
 </body>
 
 </html>
