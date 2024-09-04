@@ -1,3 +1,4 @@
+/* Profile page CSS */
 
 * {
     padding: 0;
@@ -57,7 +58,7 @@ aside {
 header {
     background-color: #797979;
     padding: 10px 0;
-    margin-bottom: 20px;
+    margin-bottom: 0px;
 }
 
 /* Flexbox container */
@@ -122,34 +123,30 @@ header {
     border-radius: 5px;
 }
 
-.menu
-{
+.menu {
     font-family: cursive;
     background-color: #3A3A3A;
     text-align: center;
 }
-.menu ul
-{
+
+.menu ul {
     display: inline-flex;
     list-style: none;
     color: #FF0000;
 }
 
-.menu ul li
-{
+.menu ul li {
     width: 200px;
     margin: 10px;
     padding: 2px;
 }
 
-.menu ul li a
-{
-text-decoration: none;
-color: #D0D0D0;
+.menu ul li a {
+    text-decoration: none;
+    color: #D0D0D0;
 }
 
-.selecting, .menu ul li:hover
-{
+.menu ul li:hover {
     background-color: #3A3A3A;
     outline: solid 3px;
     border-radius: 3px;
