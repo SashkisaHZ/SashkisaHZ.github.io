@@ -220,3 +220,21 @@ a {
     text-align: center;
     padding: 10px;
 }
+
+.container {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+h4 {
+    font-size: 30px;
+}
+.question {
+    margin-top: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.answer {
+    margin-bottom: 20px;
+    font-size: 20px;
+    background: none;
+}
