@@ -126,6 +126,7 @@ header {
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
     max-width: 450px;
+    margin-top: 35px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -197,4 +198,24 @@ footer p {
 
 a {
     color: aqua;
+}
+
+.characteristics {
+    display: flex;
+    justify-content: center;
+    gap: 60px;
+}
+
+.characteristics ul:nth-of-type(1) {
+    margin-top: 0px;
+}
+
+.characteristics ul:nth-of-type(2) {
+    margin-top: 0px;
+}
+
+.characteristics ol {
+    font-size: 30px;
+    text-align: center;
+    padding: 10px;
 }
