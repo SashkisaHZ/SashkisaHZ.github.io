@@ -52,7 +52,6 @@ main p {
     background-color: #474747;
     margin: 10px 15px;
     padding: 10px;
-    text-align: left;
     font-size: 30px;
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
@@ -70,7 +69,7 @@ header {
     font-family: cursive;
     background-color: #3A3A3A;
     text-align: center;
-    position: -webkit-sticky; /* For Safari */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     padding: 10px 0;
@@ -129,6 +128,8 @@ header {
     margin-top: 35px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    word-spacing: 5px;
+    text-align: center;
 }
 
 /* Frame for Image and Description */
