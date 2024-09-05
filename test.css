@@ -48,7 +48,7 @@ h3 {
 }
 
 /* Aside Styling */
-aside {
+main p {
     background-color: #474747;
     margin: 10px 15px;
     padding: 10px;
@@ -125,7 +125,7 @@ header {
     padding: 10px;
     color: #ffffff;
     font-family: 'Times New Roman', Times, serif;
-    max-width: 350px;
+    max-width: 450px;
     border-radius: 10px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -139,8 +139,6 @@ header {
     border-radius: 10px;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
 }
 
 .images {
@@ -184,4 +182,19 @@ header {
     width: 45px;
     height: 45px;
     cursor: pointer;
+}
+
+footer p {
+    color: #00C1FF;
+    text-align: center;
+    font-size: 20px;
+    background-color: #474747;
+    margin: 10px 15px;
+    margin-right: 70%;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+a {
+    color: aqua;
 }
