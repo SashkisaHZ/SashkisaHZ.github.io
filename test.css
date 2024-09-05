@@ -31,7 +31,9 @@ h1 {
     margin: 0;
 }
 
-h2, h3 {
+h2,
+h3,
+h5 {
     text-align: center;
     background-color: #181818;
     color: #ffffff;
@@ -45,6 +47,13 @@ h2 {
 
 h3 {
     font-size: 35px;
+}
+
+h5 {
+    font-size: 35px;
+    margin: 30px auto;
+    border-radius: 10px;
+    max-width: 38%; 
 }
 
 /* Aside Styling */
@@ -229,10 +238,12 @@ a {
 h4 {
     font-size: 30px;
 }
+
 .question {
     margin-top: 20px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
+
 .answer {
     margin-bottom: 20px;
     font-size: 20px;
