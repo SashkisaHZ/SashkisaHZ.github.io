@@ -66,7 +66,7 @@ h6 {
     margin: 30px 80px;
     border-radius: 10px;
     max-width: 0%;
-    max-height: 150 px;
+    max-height: 150px;
 }
 
 /* Aside Styling */
@@ -246,17 +246,14 @@ footer a:hover {
     color: #FF6347; /* Change link color on hover */
 }
 
-
+/* Characteristics Section */
 .characteristics {
     display: flex;
     justify-content: center;
     gap: 60px;
 }
 
-.characteristics ul:nth-of-type(1) {
-    margin-top: 0px;
-}
-
+.characteristics ul:nth-of-type(1),
 .characteristics ul:nth-of-type(2) {
     margin-top: 0px;
 }
@@ -267,11 +264,13 @@ footer a:hover {
     padding: 10px;
 }
 
+/* Container */
 .container {
     max-width: 800px;
     margin: 0 auto;
 }
 
+/* FAQ Styling */
 .question {
     margin-top: 20px;
     cursor: pointer;
@@ -312,6 +311,7 @@ footer a:hover {
     font-size: 28px;
 }
 
+/* Flex Container */
 .flex-container {
     display: flex;
     align-items: flex-start;
@@ -339,6 +339,7 @@ footer a:hover {
     height: 100%;
 }
 
+/* Details Styling */
 details {
     background-color: rgba(71, 71, 71, 0.7); /* Semi-transparent background */
     border-radius: 10px;
@@ -371,41 +372,3 @@ summary:hover {
     background-color: #474747;
 }
 
-.useful-links {
-    background-color: #3A3A3A; /* Dark background for the footer */
-    padding: 10px 15px; /* Reduced padding for a more compact look */
-    margin: 15px auto; /* Smaller margin for less space around */
-    border-radius: 8px; /* Slightly smaller rounded corners */
-    max-width: 40%; /* Reduced width for a more compact design */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
-    text-align: center; /* Center-align text */
-    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
-}
-
-.useful-links ul {
-    color: #00C1FF; /* Light color for text */
-    font-size: 18px; /* Slightly smaller font size */
-    margin: 0px; /* Remove extra margin */
-    padding: 5px 0; /* Smaller padding for compactness */
-    list-style-position: inside;
-}
-
-.useful-links li {
-    margin-bottom: 10px;
-}
-
-.useful-links a {
-    color: #00C1FF; /* Consistent link color */
-    text-decoration: none; /* Remove underline from links */
-    font-weight: bold; /* Bold links */
-    transition: color 0.3s ease; /* Smooth transition for link color */
-}
-
-.useful-links a:hover {
-    color: #FF6347; /* Change link color on hover */
-}
-
-.useful-links:hover {
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Smaller shadow on hover */
-    transform: translateY(-3px); /* Smaller lift effect on hover */
-}
