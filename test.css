@@ -177,11 +177,11 @@ header {
     height: auto;
     border-radius: 5px;
 }
-
+/*
 .images:hover {
     transform: scale(1.05);
     transition: transform 0.8s;
-}
+}*/
 
 .description {
     text-align: center;
@@ -208,20 +208,44 @@ header {
     cursor: pointer;
 }
 
-footer p {
-    color: #00C1FF;
-    text-align: center;
-    font-size: 20px;
-    background-color: #474747;
-    margin: 10px 15px;
-    margin-right: 70%;
-    padding: 10px;
-    border-radius: 10px;
+/* Footer Styling */
+footer {
+    background-color: #3A3A3A; /* Dark background for the footer */
+    padding: 10px 15px; /* Reduced padding for a more compact look */
+    margin: 15px auto; /* Smaller margin for less space around */
+    border-radius: 8px; /* Slightly smaller rounded corners */
+    max-width: 40%; /* Reduced width for a more compact design */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+    text-align: center; /* Center-align text */
+    transition: box-shadow 0.3s ease, transform 0.3s ease; /* Smooth transition */
 }
 
-a {
-    color: aqua;
+/* Hover effect for footer */
+footer:hover {
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15); /* Smaller shadow on hover */
+    transform: translateY(-3px); /* Smaller lift effect on hover */
 }
+
+/* Footer Text and Links */
+footer p {
+    color: #00C1FF; /* Light color for text */
+    font-size: 18px; /* Slightly smaller font size */
+    margin: 0; /* Remove extra margin */
+    padding: 5px 0; /* Smaller padding for compactness */
+}
+
+footer a {
+    color: #00C1FF; /* Consistent link color */
+    text-decoration: none; /* Remove underline from links */
+    font-weight: bold; /* Bold links */
+    transition: color 0.3s ease; /* Smooth transition for link color */
+}
+
+/* Hover effect for links */
+footer a:hover {
+    color: #FF6347; /* Change link color on hover */
+}
+
 
 .characteristics {
     display: flex;
@@ -250,13 +274,18 @@ a {
 
 .question {
     margin-top: 20px;
+    cursor: pointer;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .answer {
-    margin-bottom: 20px;
-    font-size: 20px;
-    background: none;
+    margin: 0;
+    padding: 15px 20px; /* Adds padding inside the answer */
+    font-size: 22px;
+    line-height: 1.6; /* Better line spacing for readability */
+    background-color: #5c5c5c; /* Slightly different color for answer */
+    color: #ffffff;
+    border-radius: 0 0 10px 10px; /* Rounds bottom corners */
 }
 
 .info-index {
@@ -280,6 +309,7 @@ a {
     color: #ffffff; 
     font-family: 'Times New Roman', Times, serif; 
     word-wrap: break-word; 
+    font-size: 28px;
 }
 
 .flex-container {
@@ -289,12 +319,10 @@ a {
     gap: 20px;
     background: #474747; 
     padding: 20px;
-    border-radius: 10px;
     max-width: 100%; 
     box-sizing: border-box;
     margin: 0px;
     overflow: hidden;
-
 }
 
 .frame-home {
@@ -307,6 +335,38 @@ a {
 }
 
 .images img {
-    width: 80%;
+    width: 77%;
     height: 100%;
+}
+
+details {
+    background-color: rgba(71, 71, 71, 0.7); /* Semi-transparent background */
+    border-radius: 10px;
+    margin-bottom: 15px; /* More spacing between questions */
+    padding: 0; /* Removed padding from details */
+    overflow: hidden; /* Ensures rounded corners appear properly */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Adds subtle shadow */
+    transition: box-shadow 0.3s ease; /* Smooth transition on hover */
+}
+
+/* Hover effect to make it look clickable */
+details:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Summary Styling */
+summary {
+    font-size: 26px;
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer; /* Shows pointer cursor */
+    padding: 15px 20px; /* Adds padding inside summary */
+    background-color: #3A3A3A; /* Background for summary */
+    border-bottom: 1px solid #555; /* Bottom border for better separation */
+    transition: background-color 0.3s ease; /* Smooth background transition */
+}
+
+/* Hover effect for summary */
+summary:hover {
+    background-color: #474747;
 }
