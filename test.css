@@ -99,14 +99,16 @@ header {
 }
 
 .menu ul {
-    display: inline-flex;
+    display: flex;
     list-style: none;
     color: #FF0000;
+    flex-wrap: wrap; /* Allows items to wrap to the next line */
+    justify-content: center; /* Center-aligns menu items */
 }
 
 .menu ul li {
     width: 200px;
-    margin: 10px;
+    margin: 5px;
     padding: 2px;
 }
 
@@ -128,6 +130,18 @@ header {
     outline: solid 3px;
     border-radius: 3px;
     color: #9A9A9A;
+}
+
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column; /* Stack menu items vertically */
+        align-items: center; /* Center-align items vertically */
+    }
+
+    .menu ul li {
+        width: 100%; /* Full width for each menu item */
+        text-align: center; /* Center-align text in menu items */
+    }
 }
 
 /* Flexbox Container */
