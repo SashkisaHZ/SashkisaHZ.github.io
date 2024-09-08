@@ -16,7 +16,7 @@ body {
 /* Custom Font */
 @font-face {
     font-family: DRAGONS;
-    src: url(FontsFree-Net-Devil-Breeze-Demi.ttf);
+    src: url(fonts/FontsFree-Net-Devil-Breeze-Demi.ttf);
 }
 
 /* Headings */

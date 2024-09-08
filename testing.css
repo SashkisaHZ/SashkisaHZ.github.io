@@ -372,3 +372,46 @@ summary:hover {
     background-color: #474747;
 }
 
+/* Credits (Aside) Section */
+.menu-aside {
+    background-color: #3A3A3A;
+    color: #ffffff;
+    padding: 20px;
+    margin: 20px auto;
+    max-width: 60%; /* Adjust width as needed */
+    border-radius: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    text-align: center;
+}
+
+/* Header for the aside */
+.menu-aside-header {
+    font-size: 24px;
+    margin-bottom: 15px;
+    color: #ffffff;
+    font-weight: bold;
+    text-transform: uppercase; /* Capitalized for emphasis */
+}
+
+/* Styling for the list */
+.menu-aside ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu-aside ul li {
+    margin: 10px 0;
+}
+
+.menu-aside ul li a {
+    color: #00C1FF;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.menu-aside ul li a:hover {
+    color: #FF6347; /* Change link color on hover */
+}
+
