@@ -415,3 +415,25 @@ summary:hover {
     color: #FF6347; /* Change link color on hover */
 }
 
+/* Studies Section Styling */
+.studies {
+    margin: 30px auto;
+    width: 80%;
+    background-color: #3A3A3A; /* Dark background */
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+.question {
+    font-size: 2em;
+    font-weight: bold;
+    color: #00C1FF; /* Accent color for the question */
+}
+
+
+
+
+

@@ -420,17 +420,127 @@ summary:hover {
     transform: translateY(-3px); 
 }
 
+/* Studies Section Styling */
 .studies {
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: 30px auto;
+    width: 80%;
+    background-color: #3A3A3A; 
+    padding: 20px;
+    border-radius: 10px;
+    color: #ffffff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.3s; 
+}
+
+.studies:hover {
+    background-color: #2E2E2E; 
+}
+
+.question {
+    font-size: 1.2em;
+    font-weight: bold;
+    color: #00C1FF; 
+    cursor: pointer;
 }
 
 .bachelor {
-    margin: 0;
-    padding: 15px 20px;
-    font-size: 22px;
-    line-height: 1.6;
-    background-color: #5c5c5c;
+    list-style: none; /* Remove default list style */
+    padding: 0;
+    margin: 20px 0 0;
+}
+
+.bachelor li {
+    display: flex; 
+    align-items: center;
+    background-color: #474747; 
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s; 
+}
+
+.bachelor li:hover {
+    transform: translateX(5px); /* Slight shift effect on hover */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+/* Intro Section Styling */
+.intro-section {
+    text-align: center; /* Center-align the text */
+    margin: 40px auto; /* Margin for spacing */
+    padding: 20px; /* Padding for spacing inside the section */
+    background-color: #3A3A3A; /* Dark background for contrast */
+    color: #ffffff; /* White text color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+    max-width: 80%; /* Limit the width to 80% */
+}
+
+.intro-heading {
+    font-size: 2em; /* Larger font size for the heading */
+    font-weight: bold; /* Bold text */
+    color: #00C1FF; /* Accent color for the heading */
+    margin-bottom: 10px; /* Space below the heading */
+}
+
+.intro-subtext {
+    font-size: 1.2em; /* Slightly smaller font for subtext */
+    color: #DADADA; /* Light gray for subtext */
+    margin-top: 0; /* Remove top margin for compactness */
+    font-style: italic; /* Italic style for a softer touch */
+}
+
+.dashboard-info {
+    margin: 30px auto;
+    width: 80%;
+    background-color: #3A3A3A; 
+    padding: 20px;
+    border-radius: 10px;
     color: #ffffff;
-    border-radius: 0 0 10px 10px;
+}
+
+.first-table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 3.5%;
+    width: 80%;
+    background-color: #3A3A3A; /* Dark background */
+    color: #ffffff; /* Light text color for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners are visible */
+}
+
+td {
+    border: 1px solid #474747; /* Subtle border color */
+    padding: 12px; /* Adds padding for better spacing */
+    text-align: center;
+}
+
+td {
+    background-color: #5c5c5c; /* Darker background for rows */
+    color: #ffffff; /* Text color for rows */
+}
+
+tr:nth-child(even) td {
+    background-color: #3A3A3A; /* Alternating row color */
+}
+
+tr:hover td {
+    background-color: #FF6347; /* Highlight row on hover */
+    color: #ffffff; /* Keep text white on hover */
+    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
+}
+
+.second-table {
+    border-collapse: collapse;
+    margin: auto;
+    margin-top: 3.5%;
+    width: 60%;
+    background-color: #3A3A3A; /* Dark background */
+    color: #ffffff; /* Light text color for readability */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+    border-radius: 10px; /* Rounded corners */
+    overflow: hidden; /* Ensures rounded corners are visible */
 }
