@@ -22,49 +22,126 @@
 
     <style>
         /* Table Styling */
-table {
-    border-collapse: collapse;
-    margin: auto;
-    margin-top: 3.5%;
-    width: 80%;
-    background-color: #3A3A3A; /* Dark background */
-    color: #ffffff; /* Light text color for readability */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Subtle shadow */
-    border-radius: 10px; /* Rounded corners */
-    overflow: hidden; /* Ensures rounded corners are visible */
+        table {
+            border-collapse: collapse;
+            margin: auto;
+            margin-top: 3.5%;
+            width: 80%;
+            background-color: #3A3A3A;
+            /* Dark background */
+            color: #ffffff;
+            /* Light text color for readability */
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            /* Subtle shadow */
+            border-radius: 10px;
+            /* Rounded corners */
+            overflow: hidden;
+            /* Ensures rounded corners are visible */
+        }
+
+        th,
+        td {
+            border: 1px solid #474747;
+            /* Subtle border color */
+            padding: 12px 15px;
+            /* Adds padding for better spacing */
+            text-align: center;
+        }
+
+        th {
+            background-color: #474747;
+            /* Slightly darker background for headers */
+            color: #00C1FF;
+            /* Accent color for headers */
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        td {
+            background-color: #5c5c5c;
+            /* Darker background for rows */
+            color: #ffffff;
+            /* Text color for rows */
+        }
+
+        tr:nth-child(even) td {
+            background-color: #3A3A3A;
+            /* Alternating row color */
+        }
+
+        tr:hover td {
+            background-color: #FF6347;
+            /* Highlight row on hover */
+            color: #ffffff;
+            /* Keep text white on hover */
+            transition: background-color 0.3s ease;
+            /* Smooth transition for hover effect */
+        }
+
+        td:nth-child(3) {
+            padding: 12px 2px;
+            /* Adjust the width as needed */
+        }
+
+        .blog-content {
+    width: 70%; /* Adjust width to not take the whole screen */
+    margin: 20px auto;
 }
 
-th, td {
-    border: 1px solid #474747; /* Subtle border color */
-    padding: 12px 15px; /* Adds padding for better spacing */
-    text-align: center;
+.post {
+    background-color: #3A3A3A; /* Dark background for posts */
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #D0D0D0; /* Light text color for readability */
+    margin-bottom: 20px; /* Space between posts */
 }
 
-th {
-    background-color: #474747; /* Slightly darker background for headers */
-    color: #00C1FF; /* Accent color for headers */
-    font-weight: bold;
-    font-size: 18px;
+.post h2 {
+    color: #ffffff; /* White text for post titles */
+    margin-top: 0;
+    font-size: 1.6em; /* Slightly larger font size for titles */
 }
 
-td {
-    background-color: #5c5c5c; /* Darker background for rows */
-    color: #ffffff; /* Text color for rows */
+.post-meta {
+    color: #9A9A9A; /* Lighter gray for meta info */
+    font-size: 0.9em; /* Smaller font size */
+    margin-bottom: 10px;
 }
 
-tr:nth-child(even) td {
-    background-color: #3A3A3A; /* Alternating row color */
+.post p {
+    line-height: 1.6; /* More space between lines for readability */
+    color: #D0D0D0; /* Light text color */
+    font-size: 1em; /* Standard font size */
+    margin-bottom: 10px; /* Space below paragraphs */
 }
 
-tr:hover td {
-    background-color: #FF6347; /* Highlight row on hover */
-    color: #ffffff; /* Keep text white on hover */
-    transition: background-color 0.3s ease; /* Smooth transition for hover effect */
-}
-td:nth-child(3) {
-    padding: 12px 2px; /* Adjust the width as needed */
+.post footer {
+    margin-top: 20px; /* Space before footer */
 }
 
+footer details {
+    background-color: #3A3A3A; /* Same background for consistency */
+    border: none;
+    padding: 0;
+}
+
+footer summary {
+    font-size: 1.1em;
+    color: #00C1FF; /* Accent color for summary */
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 4px;
+}
+
+footer summary:hover {
+    background-color: #474747; /* Slightly lighter background on hover */
+}
+
+footer p {
+    margin: 0;
+    padding: 10px;
+}
 
     </style>
 </head>
@@ -86,10 +163,77 @@ td:nth-child(3) {
     <main>
         <h3>Dashboard</h3>
 
+
+        </br>
+        <section class="blog-content">
+            <!-- Blog Post 1 -->
+            <article class="post">
+                <header>
+                    <h5>Blog Post Title 1</h5>
+                    <p class="post-meta"><time datetime="2024-09-03">September 3, 2024</time> by <span>Alexander Atanasov</span></p>
+                </header>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam sit amet purus in metus bibendum vehicula nec ut lacus.</p>
+                <footer>
+                    <details>
+                        <summary>Read more...</summary>
+                        <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis.</p>
+                    </details>
+                </footer>
+            </article>
+        
+            <!-- Blog Post 2 -->
+            <article class="post">
+                <header>
+                    <h2>Blog Post Title 2</h2>
+                    <p class="post-meta"><time datetime="2024-09-10">September 10, 2024</time> by <span>Author Name</span></p>
+                </header>
+                <p>Quisque egestas quam a lacus scelerisque, sed laoreet lacus bibendum. Mauris egestas, nulla et dictum interdum.</p>
+                <footer>
+                    <details>
+                        <summary>Read more...</summary>
+                        <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis.</p>
+                    </details>
+                </footer>
+            </article>
+        
+            <!-- Blog Post 3 -->
+            <article class="post">
+                <header>
+                    <h2>Blog Post Title 3</h2>
+                    <p class="post-meta"><time datetime="2024-09-09">September 9, 2024</time> by <span>Author Name</span></p>
+                </header>
+                <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis.</p>
+                <footer>
+                    <details>
+                        <summary>Read more...</summary>
+                        <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis.</p>
+                    </details>
+                </footer>
+            </article>
+        
+            <!-- Blog Post 4 -->
+            <article class="post">
+                <header>
+                    <h2>Blog Post Title 4</h2>
+                    <p class="post-meta"><time datetime="2024-09-08">September 8, 2024</time> by <span>Author Name</span></p>
+                </header>
+                <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Aenean egestas magna at.</p>
+                <footer>
+                    <details>
+                        <summary>Read more...</summary>
+                        <p>Curabitur lobortis id lorem id bibendum. Ut id consectetur magna. Quisque volutpat augue enim, pulvinar lobortis.</p>
+                    </details>
+                </footer>
+            </article>
+        </section>
+        
+
+        </br>
+
         <section class="studies">
             <h3 class="intro">Alexander Atanasov HBO-ICT Study Progress</h3>
         </section>
-        
+
 
         <table>
             <tr>
@@ -170,7 +314,7 @@ td:nth-child(3) {
                 <td>Individual Assesment</td>
                 <td>-</td>
             </tr>
-            
+
             <tr>
                 <td>CODECODE</td>
                 <td rowspan="3">2</td>

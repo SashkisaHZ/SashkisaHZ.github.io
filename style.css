@@ -544,3 +544,79 @@ tr:hover td {
     border-radius: 10px; /* Rounded corners */
     overflow: hidden; /* Ensures rounded corners are visible */
 }
+
+/* Blog Page Styling */
+
+.blog-content {
+    width: 70%;
+    /* Adjust width to not take the whole screen */
+    margin: 20px auto;
+}
+
+.post {
+    background-color: #3A3A3A;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    color: #D0D0D0;
+    margin-bottom: 20px;
+}
+
+.post header {
+    background-color: #797979;
+    border-radius: 10px;
+}
+
+.post h5 {
+    font-size: 25px;
+    margin: 10px;
+    border-radius: 10px;
+    max-width: 30%;
+}
+
+.post-meta {
+    color: #9A9A9A;
+    font-size: 0.9em;
+    margin-bottom: 10px;
+    max-width: 35%;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+.post p {
+    line-height: 1.6;
+    color: #D0D0D0;
+    font-size: 1em;
+    margin-bottom: 10px;
+}
+
+.blog {
+    margin-top: 25px;
+    max-width: 100%;
+}
+
+.post-details {
+    background-color: transparent;
+    border: none;
+    padding: 0;
+    box-shadow: none;
+}
+
+.blog summary {
+    font-size: 1.1em;
+    color: #00C1FF;
+    /* Accent color for summary */
+    cursor: pointer;
+    padding: 5px;
+    border-radius: 4px;
+}
+
+.blog summary:hover {
+    background-color: #474747;
+    /* Slightly lighter background on hover */
+}
+
+.blog p {
+    margin: 0;
+    padding: 10px;
+}
