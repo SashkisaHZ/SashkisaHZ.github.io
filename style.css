@@ -586,7 +586,7 @@ tr:hover td {
 .post p {
     line-height: 1.6;
     color: #D0D0D0;
-    font-size: 1em;
+    font-size: 18px;
     margin-bottom: 10px;
 }
 
@@ -619,4 +619,5 @@ tr:hover td {
 .blog p {
     margin: 0;
     padding: 10px;
+    font-size: 25px;
 }
