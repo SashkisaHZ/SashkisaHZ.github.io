@@ -528,7 +528,7 @@ tr:nth-child(even) td {
 }
 
 tr:hover td {
-    background-color: #FF6347; /* Highlight row on hover */
+    background-color: #00C1FF; /* Highlight row on hover */
     color: #ffffff; /* Keep text white on hover */
     transition: background-color 0.3s ease; /* Smooth transition for hover effect */
 }
@@ -597,6 +597,7 @@ tr:hover td {
 
 .post-details {
     background-color: transparent;
+    text-align: justify;
     border: none;
     padding: 0;
     box-shadow: none;
